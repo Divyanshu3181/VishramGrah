@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-const dbConfig = require("../db");
+const dbConfig = require("./db");
 const roomsRoute = require('./routes/roomsRoute');
 
 app.use('/api/rooms', roomsRoute);
