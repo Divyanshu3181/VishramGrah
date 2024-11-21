@@ -13,17 +13,16 @@ const roomSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    rentparday: {
+    rentperday: {
         type: Number,
         required: true
     },
     imageurls: {
-        type: [String],  // Array of strings for image URLs
+        type: [String], 
         required: true
     },
     currentbookings: {
-        type: [Object],  // Array of objects for bookings
-        default: []
+        type: [],  
     },
     type: {
         type: String,
